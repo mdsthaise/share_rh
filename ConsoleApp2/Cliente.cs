@@ -11,16 +11,16 @@ namespace ConsoleApp2
         public string Telefone { get; set; }
         public bool ConstaSpc { get; set; }
         public string CpfCnpj { get; set; }
-        public Conta ContaCorrente { get; set; }
-        public Conta ContaPoupanca { get; set; }
+        public ContaCorrente ContaCorrente { get; set; }
+        public ContaPoupanca ContaPoupanca { get; set; }
 
         public Cliente()
         {
-            ContaCorrente = new Conta();
+            ContaCorrente = new ContaCorrente();
             ContaCorrente.Agencia = 1;
             ContaCorrente.Numero = 123456;
 
-            ContaPoupanca = new Conta();
+            ContaPoupanca = new ContaPoupanca();
             ContaPoupanca.Agencia = 1;
             ContaPoupanca.Numero = 78901;
         }

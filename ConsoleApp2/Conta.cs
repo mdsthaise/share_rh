@@ -12,7 +12,6 @@ namespace ConsoleApp2
         public decimal Saldo { get; set; }
         public string Status { get; set; }
 
-
         public string Sacar(int valorParaSaque)
         {
             if (valorParaSaque > 500)
